@@ -1,0 +1,179 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here.
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Base colors - Dark theme */
+    --background: 222 84% 5%; /* richblack-900 */
+    --foreground: 0 0% 100%; /* white */
+
+    /* Card colors */
+    --card: 223 46% 11%; /* richblack-800 */
+    --card-foreground: 0 0% 100%;
+
+    /* Popover colors */
+    --popover: 223 46% 11%;
+    --popover-foreground: 0 0% 100%;
+
+    /* Primary brand colors - Yellow */
+    --primary: 50 100% 52%; /* yellow-50 */
+    --primary-foreground: 0 0% 0%; /* black */
+    --primary-hover: 48 100% 50%; /* yellow-100 */
+    --primary-light: 50 100% 85%;
+
+    /* Secondary colors - Dark */
+    --secondary: 223 39% 20%; /* richblack-700 */
+    --secondary-foreground: 0 0% 100%;
+    --secondary-hover: 223 39% 25%;
+
+    /* Muted colors - Light white instead of dark */
+    --muted: 223 39% 20%; /* richblack-700 */
+    --muted-foreground: 0 0% 85%; /* Light white instead of dark */
+
+    /* Accent colors */
+    --accent: 223 39% 20%;
+    --accent-foreground: 0 0% 100%;
+
+    /* Status colors */
+    --success: 160 84% 39%; /* caribbeangreen-100 */
+    --success-foreground: 0 0% 100%;
+
+    --warning: 45 97% 54%; /* brown-50 */
+    --warning-foreground: 0 0% 0%;
+
+    --destructive: 351 83% 61%; /* pink-200 */
+    --destructive-foreground: 0 0% 100%;
+
+    /* UI elements */
+    --border: 223 39% 20%; /* richblack-700 */
+    --input: 223 46% 11%; /* richblack-800 */
+    --ring: 50 100% 52%;
+
+    /* Card border - Light yellow */
+    --card-border: 50 100% 70%; /* Light yellow border */
+
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(50 100% 52%), hsl(48 100% 50%));
+    --gradient-secondary: linear-gradient(135deg, hsl(223 46% 11%), hsl(223 39% 20%));
+    --gradient-accent: linear-gradient(135deg, hsl(223 39% 20%), hsl(223 39% 25%));
+
+    /* Lighter Shadows */
+    --shadow-sm: 0 1px 3px 0 hsl(0 0% 0% / 0.15);
+    --shadow-md: 0 4px 8px -2px hsl(0 0% 0% / 0.2), 0 2px 4px -2px hsl(0 0% 0% / 0.1);
+    --shadow-lg: 0 8px 16px -4px hsl(0 0% 0% / 0.25), 0 4px 8px -4px hsl(0 0% 0% / 0.15);
+    --shadow-xl: 0 16px 32px -8px hsl(0 0% 0% / 0.3), 0 8px 16px -8px hsl(0 0% 0% / 0.2);
+
+    /* Animations */
+    --transition-smooth: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-spring: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 223 46% 11%;
+    --sidebar-foreground: 0 0% 100%;
+    --sidebar-primary: 50 100% 52%;
+    --sidebar-primary-foreground: 0 0% 0%;
+    --sidebar-accent: 223 39% 20%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 223 39% 20%;
+    --sidebar-ring: 50 100% 52%;
+  }
+
+  .dark {
+    /* Same as root since we're using dark theme by default */
+    --background: 222 84% 5%;
+    --foreground: 0 0% 100%;
+    --card: 223 46% 11%;
+    --card-foreground: 0 0% 100%;
+    --popover: 223 46% 11%;
+    --popover-foreground: 0 0% 100%;
+    --primary: 50 100% 52%;
+    --primary-foreground: 0 0% 0%;
+    --primary-hover: 48 100% 50%;
+    --primary-light: 50 100% 85%;
+    --secondary: 223 39% 20%;
+    --secondary-foreground: 0 0% 100%;
+    --secondary-hover: 223 39% 25%;
+    --muted: 223 39% 20%;
+    --muted-foreground: 0 0% 85%; /* Light white */
+    --accent: 223 39% 20%;
+    --accent-foreground: 0 0% 100%;
+    --success: 160 84% 39%;
+    --success-foreground: 0 0% 100%;
+    --warning: 45 97% 54%;
+    --warning-foreground: 0 0% 0%;
+    --destructive: 351 83% 61%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 223 39% 20%;
+    --input: 223 46% 11%;
+    --ring: 50 100% 52%;
+    --card-border: 50 100% 70%;
+    --sidebar-background: 223 46% 11%;
+    --sidebar-foreground: 0 0% 100%;
+    --sidebar-primary: 50 100% 52%;
+    --sidebar-primary-foreground: 0 0% 0%;
+    --sidebar-accent: 223 39% 20%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 223 39% 20%;
+    --sidebar-ring: 50 100% 52%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  
+  body {
+    @apply bg-background text-foreground font-inter;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply text-foreground font-semibold;
+  }
+
+  p {
+    @apply text-muted-foreground;
+  }
+}
+
+@layer components {
+  .card-shadow {
+    box-shadow: var(--shadow-lg);
+  }
+  
+  .button-shadow {
+    box-shadow: var(--shadow-sm);
+  }
+  
+  .text-primary-heading {
+    @apply text-foreground font-semibold;
+  }
+  
+  .text-secondary {
+    @apply text-muted-foreground;
+  }
+}
+/* …all previous code stays intact … */
+
+/* NEW ↓  place after the components layer so utilities are available */
+@layer utilities {
+  /* subtle light-yellow down-shadow */
+  .shadow-down-lg {
+    box-shadow: 0 8px 12px -4px hsl(50 100% 70% / 0.35);
+  }
+  .shadow-down-sm {
+    box-shadow: 0 4px 8px -4px hsl(50 100% 70% / 0.35);
+  }
+  /* circular pagination border */
+  .page-circle {
+    @apply rounded-full border border-card-border px-3 py-1 text-sm leading-none;
+  }
+}
+

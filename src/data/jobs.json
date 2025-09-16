@@ -1,0 +1,452 @@
+[
+  {
+    "id": "job-1",
+    "title": "Senior UX Designer",
+    "slug": "senior-ux-designer",
+    "description": "Join our innovative team as a Senior UX Designer! We are seeking a passionate professional to drive excellence in our cutting-edge technology solutions and contribute to transformative projects that shape the future.",
+    "status": "active",
+    "tags": [
+      "UX",
+      "UI",
+      "Design"
+    ],
+    "location": "San Francisco, CA",
+    "type": "Full-time",
+    "department": "Design",
+    "createdAt": "2025-01-01T09:00:00Z",
+    "updatedAt": "2025-01-01T09:15:00Z",
+    "order": 0
+  },
+  {
+    "id": "job-2",
+    "title": "Principal UX Designer",
+    "slug": "principal-ux-designer",
+    "description": "Join our innovative team as a Principal UX Designer! We are seeking a passionate professional to drive excellence in our cutting-edge technology solutions and contribute to transformative projects that shape the future.",
+    "status": "draft",
+    "tags": [
+      "UI",
+      "Design",
+      "Figma"
+    ],
+    "location": "New York, NY",
+    "type": "Part-time",
+    "department": "Design",
+    "createdAt": "2025-01-02T10:01:00Z",
+    "updatedAt": "2025-01-02T10:16:00Z",
+    "order": 1
+  },
+  {
+    "id": "job-3",
+    "title": "Lead UX Designer",
+    "slug": "lead-ux-designer",
+    "description": "Join our innovative team as a Lead UX Designer! We are seeking a passionate professional to drive excellence in our cutting-edge technology solutions and contribute to transformative projects that shape the future.",
+    "status": "paused",
+    "tags": [
+      "Design",
+      "Figma",
+      "Prototyping"
+    ],
+    "location": "Seattle, WA",
+    "type": "Contract",
+    "department": "Design",
+    "createdAt": "2025-01-03T11:02:00Z",
+    "updatedAt": "2025-01-03T11:17:00Z",
+    "order": 2
+  },
+  {
+    "id": "job-4",
+    "title": "UX Design Manager",
+    "slug": "ux-design-manager",
+    "description": "Join our innovative team as a UX Design Manager! We are seeking a passionate professional to drive excellence in our cutting-edge technology solutions and contribute to transformative projects that shape the future.",
+    "status": "closed",
+    "tags": [
+      "Figma",
+      "Prototyping",
+      "User Research"
+    ],
+    "location": "Austin, TX",
+    "type": "Remote",
+    "department": "Design",
+    "createdAt": "2025-01-04T12:03:00Z",
+    "updatedAt": "2025-01-04T12:18:00Z",
+    "order": 3
+  },
+  {
+    "id": "job-5",
+    "title": "Staff UX Designer",
+    "slug": "staff-ux-designer",
+    "description": "Join our innovative team as a Staff UX Designer! We are seeking a passionate professional to drive excellence in our cutting-edge technology solutions and contribute to transformative projects that shape the future.",
+    "status": "on-hold",
+    "tags": [
+      "Prototyping",
+      "User Research",
+      "Design Systems"
+    ],
+    "location": "Boston, MA",
+    "type": "Hybrid",
+    "department": "Design",
+    "createdAt": "2025-01-05T13:04:00Z",
+    "updatedAt": "2025-01-05T13:19:00Z",
+    "order": 4
+  },
+  {
+    "id": "job-6",
+    "title": "Senior Data Scientist",
+    "slug": "senior-data-scientist",
+    "description": "Join our innovative team as a Senior Data Scientist! We are seeking a passionate professional to drive excellence in our cutting-edge technology solutions and contribute to transformative projects that shape the future.",
+    "status": "active",
+    "tags": [
+      "Data Analysis",
+      "Statistics",
+      "SQL"
+    ],
+    "location": "Los Angeles, CA",
+    "type": "Internship",
+    "department": "Data Science",
+    "createdAt": "2025-01-06T14:05:00Z",
+    "updatedAt": "2025-01-06T14:20:00Z",
+    "order": 5
+  },
+  {
+    "id": "job-7",
+    "title": "Principal Data Scientist",
+    "slug": "principal-data-scientist",
+    "description": "Join our innovative team as a Principal Data Scientist! We are seeking a passionate professional to drive excellence in our cutting-edge technology solutions and contribute to transformative projects that shape the future.",
+    "status": "draft",
+    "tags": [
+      "Statistics",
+      "SQL",
+      "Python"
+    ],
+    "location": "Chicago, IL",
+    "type": "Full-time",
+    "department": "Data Science",
+    "createdAt": "2025-01-07T15:06:00Z",
+    "updatedAt": "2025-01-07T15:21:00Z",
+    "order": 6
+  },
+  {
+    "id": "job-8",
+    "title": "Lead Data Scientist",
+    "slug": "lead-data-scientist",
+    "description": "Join our innovative team as a Lead Data Scientist! We are seeking a passionate professional to drive excellence in our cutting-edge technology solutions and contribute to transformative projects that shape the future.",
+    "status": "paused",
+    "tags": [
+      "SQL",
+      "Python",
+      "ML"
+    ],
+    "location": "Denver, CO",
+    "type": "Part-time",
+    "department": "Data Science",
+    "createdAt": "2025-01-08T16:07:00Z",
+    "updatedAt": "2025-01-08T16:22:00Z",
+    "order": 7
+  },
+  {
+    "id": "job-9",
+    "title": "Staff Data Scientist",
+    "slug": "staff-data-scientist",
+    "description": "Join our innovative team as a Staff Data Scientist! We are seeking a passionate professional to drive excellence in our cutting-edge technology solutions and contribute to transformative projects that shape the future.",
+    "status": "closed",
+    "tags": [
+      "Python",
+      "ML",
+      "Analytics"
+    ],
+    "location": "Portland, OR",
+    "type": "Contract",
+    "department": "Data Science",
+    "createdAt": "2025-01-09T17:08:00Z",
+    "updatedAt": "2025-01-09T17:23:00Z",
+    "order": 8
+  },
+  {
+    "id": "job-10",
+    "title": "Senior ML Engineer",
+    "slug": "senior-ml-engineer",
+    "description": "Join our innovative team as a Senior ML Engineer! We are seeking a passionate professional to drive excellence in our cutting-edge technology solutions and contribute to transformative projects that shape the future.",
+    "status": "on-hold",
+    "tags": [
+      "ML",
+      "Analytics",
+      "TensorFlow"
+    ],
+    "location": "Atlanta, GA",
+    "type": "Remote",
+    "department": "Data Science",
+    "createdAt": "2025-01-10T18:09:00Z",
+    "updatedAt": "2025-01-10T18:24:00Z",
+    "order": 9
+  },
+  {
+    "id": "job-11",
+    "title": "Senior Backend Engineer",
+    "slug": "senior-backend-engineer",
+    "description": "Join our innovative team as a Senior Backend Engineer! We are seeking a passionate professional to drive excellence in our cutting-edge technology solutions and contribute to transformative projects that shape the future.",
+    "status": "active",
+    "tags": [
+      "AWS",
+      "API",
+      "Databases"
+    ],
+    "location": "Miami, FL",
+    "type": "Hybrid",
+    "department": "Engineering",
+    "createdAt": "2025-01-11T19:10:00Z",
+    "updatedAt": "2025-01-11T19:25:00Z",
+    "order": 10
+  },
+  {
+    "id": "job-12",
+    "title": "Principal Backend Engineer",
+    "slug": "principal-backend-engineer",
+    "description": "Join our innovative team as a Principal Backend Engineer! We are seeking a passionate professional to drive excellence in our cutting-edge technology solutions and contribute to transformative projects that shape the future.",
+    "status": "draft",
+    "tags": [
+      "API",
+      "Databases",
+      "Microservices"
+    ],
+    "location": "Toronto, ON",
+    "type": "Internship",
+    "department": "Engineering",
+    "createdAt": "2025-01-12T20:11:00Z",
+    "updatedAt": "2025-01-12T20:26:00Z",
+    "order": 11
+  },
+  {
+    "id": "job-13",
+    "title": "Lead Backend Engineer",
+    "slug": "lead-backend-engineer",
+    "description": "Join our innovative team as a Lead Backend Engineer! We are seeking a passionate professional to drive excellence in our cutting-edge technology solutions and contribute to transformative projects that shape the future.",
+    "status": "paused",
+    "tags": [
+      "Databases",
+      "Microservices",
+      "Docker"
+    ],
+    "location": "Vancouver, BC",
+    "type": "Full-time",
+    "department": "Engineering",
+    "createdAt": "2025-01-13T21:12:00Z",
+    "updatedAt": "2025-01-13T21:27:00Z",
+    "order": 12
+  },
+  {
+    "id": "job-14",
+    "title": "Staff Backend Engineer",
+    "slug": "staff-backend-engineer",
+    "description": "Join our innovative team as a Staff Backend Engineer! We are seeking a passionate professional to drive excellence in our cutting-edge technology solutions and contribute to transformative projects that shape the future.",
+    "status": "closed",
+    "tags": [
+      "Microservices",
+      "Docker",
+      "Kubernetes"
+    ],
+    "location": "London, UK",
+    "type": "Part-time",
+    "department": "Engineering",
+    "createdAt": "2025-01-14T22:13:00Z",
+    "updatedAt": "2025-01-14T22:28:00Z",
+    "order": 13
+  },
+  {
+    "id": "job-15",
+    "title": "Backend Architect",
+    "slug": "backend-architect",
+    "description": "Join our innovative team as a Backend Architect! We are seeking a passionate professional to drive excellence in our cutting-edge technology solutions and contribute to transformative projects that shape the future.",
+    "status": "on-hold",
+    "tags": [
+      "Docker",
+      "Kubernetes",
+      "Node.js"
+    ],
+    "location": "Berlin, DE",
+    "type": "Contract",
+    "department": "Engineering",
+    "createdAt": "2025-01-15T23:14:00Z",
+    "updatedAt": "2025-01-15T23:29:00Z",
+    "order": 14
+  },
+  {
+    "id": "job-16",
+    "title": "Senior Product Manager",
+    "slug": "senior-product-manager",
+    "description": "Join our innovative team as a Senior Product Manager! We are seeking a passionate professional to drive excellence in our cutting-edge technology solutions and contribute to transformative projects that shape the future.",
+    "status": "active",
+    "tags": [
+      "Stakeholder Management",
+      "Product",
+      "Strategy"
+    ],
+    "location": "Amsterdam, NL",
+    "type": "Remote",
+    "department": "Product",
+    "createdAt": "2025-01-17T00:15:00Z",
+    "updatedAt": "2025-01-17T00:30:00Z",
+    "order": 15
+  },
+  {
+    "id": "job-17",
+    "title": "Principal Product Manager",
+    "slug": "principal-product-manager",
+    "description": "Join our innovative team as a Principal Product Manager! We are seeking a passionate professional to drive excellence in our cutting-edge technology solutions and contribute to transformative projects that shape the future.",
+    "status": "draft",
+    "tags": [
+      "Product",
+      "Strategy",
+      "Roadmap"
+    ],
+    "location": "Stockholm, SE",
+    "type": "Hybrid",
+    "department": "Product",
+    "createdAt": "2025-01-18T01:16:00Z",
+    "updatedAt": "2025-01-18T01:31:00Z",
+    "order": 16
+  },
+  {
+    "id": "job-18",
+    "title": "Lead Product Manager",
+    "slug": "lead-product-manager",
+    "description": "Join our innovative team as a Lead Product Manager! We are seeking a passionate professional to drive excellence in our cutting-edge technology solutions and contribute to transformative projects that shape the future.",
+    "status": "paused",
+    "tags": [
+      "Strategy",
+      "Roadmap",
+      "Analytics"
+    ],
+    "location": "Dublin, IE",
+    "type": "Internship",
+    "department": "Product",
+    "createdAt": "2025-01-19T02:17:00Z",
+    "updatedAt": "2025-01-19T02:32:00Z",
+    "order": 17
+  },
+  {
+    "id": "job-19",
+    "title": "VP Product Management",
+    "slug": "vp-product-management",
+    "description": "Join our innovative team as a VP Product Management! We are seeking a passionate professional to drive excellence in our cutting-edge technology solutions and contribute to transformative projects that shape the future.",
+    "status": "closed",
+    "tags": [
+      "Roadmap",
+      "Analytics",
+      "B2B"
+    ],
+    "location": "Sydney, AU",
+    "type": "Full-time",
+    "department": "Product",
+    "createdAt": "2025-01-20T03:18:00Z",
+    "updatedAt": "2025-01-20T03:33:00Z",
+    "order": 18
+  },
+  {
+    "id": "job-20",
+    "title": "Director Product Management",
+    "slug": "director-product-management",
+    "description": "Join our innovative team as a Director Product Management! We are seeking a passionate professional to drive excellence in our cutting-edge technology solutions and contribute to transformative projects that shape the future.",
+    "status": "on-hold",
+    "tags": [
+      "Analytics",
+      "B2B",
+      "SaaS"
+    ],
+    "location": "Singapore, SG",
+    "type": "Part-time",
+    "department": "Product",
+    "createdAt": "2025-01-21T04:19:00Z",
+    "updatedAt": "2025-01-21T04:34:00Z",
+    "order": 19
+  },
+  {
+    "id": "job-21",
+    "title": "Principal Frontend Developer",
+    "slug": "principal-frontend-developer",
+    "description": "Join our innovative team as a Principal Frontend Developer! We are seeking a passionate professional to drive excellence in our cutting-edge technology solutions and contribute to transformative projects that shape the future.",
+    "status": "active",
+    "tags": [
+      "HTML",
+      "Vue.js",
+      "Angular"
+    ],
+    "location": "Tokyo, JP",
+    "type": "Contract",
+    "department": "Engineering",
+    "createdAt": "2025-01-22T05:20:00Z",
+    "updatedAt": "2025-01-22T05:35:00Z",
+    "order": 20
+  },
+  {
+    "id": "job-22",
+    "title": "Lead Frontend Developer",
+    "slug": "lead-frontend-developer",
+    "description": "Join our innovative team as a Lead Frontend Developer! We are seeking a passionate professional to drive excellence in our cutting-edge technology solutions and contribute to transformative projects that shape the future.",
+    "status": "draft",
+    "tags": [
+      "Vue.js",
+      "Angular",
+      "Redux"
+    ],
+    "location": "Mumbai, MH",
+    "type": "Remote",
+    "department": "Engineering",
+    "createdAt": "2025-01-23T06:21:00Z",
+    "updatedAt": "2025-01-23T06:36:00Z",
+    "order": 21
+  },
+  {
+    "id": "job-23",
+    "title": "Frontend Architect",
+    "slug": "frontend-architect",
+    "description": "Join our innovative team as a Frontend Architect! We are seeking a passionate professional to drive excellence in our cutting-edge technology solutions and contribute to transformative projects that shape the future.",
+    "status": "paused",
+    "tags": [
+      "Angular",
+      "Redux",
+      "React"
+    ],
+    "location": "Bengaluru, KA",
+    "type": "Hybrid",
+    "department": "Engineering",
+    "createdAt": "2025-01-24T07:22:00Z",
+    "updatedAt": "2025-01-24T07:37:00Z",
+    "order": 22
+  },
+  {
+    "id": "job-24",
+    "title": "Staff Frontend Engineer",
+    "slug": "staff-frontend-engineer",
+    "description": "Join our innovative team as a Staff Frontend Engineer! We are seeking a passionate professional to drive excellence in our cutting-edge technology solutions and contribute to transformative projects that shape the future.",
+    "status": "closed",
+    "tags": [
+      "Redux",
+      "React",
+      "TypeScript"
+    ],
+    "location": "Tel Aviv, IL",
+    "type": "Internship",
+    "department": "Engineering",
+    "createdAt": "2025-01-25T08:23:00Z",
+    "updatedAt": "2025-01-25T08:38:00Z",
+    "order": 23
+  },
+  {
+    "id": "job-25",
+    "title": "Senior React Developer",
+    "slug": "senior-react-developer",
+    "description": "Join our innovative team as a Senior React Developer! We are seeking a passionate professional to drive excellence in our cutting-edge technology solutions and contribute to transformative projects that shape the future.",
+    "status": "on-hold",
+    "tags": [
+      "React",
+      "TypeScript",
+      "JavaScript"
+    ],
+    "location": "Remote",
+    "type": "Full-time",
+    "department": "Technology",
+    "createdAt": "2025-01-25T09:24:00Z",
+    "updatedAt": "2025-01-25T09:39:00Z",
+    "order": 24
+  }
+]

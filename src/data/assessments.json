@@ -1,0 +1,1802 @@
+[
+  {
+    "id": "assessment-job-1-1",
+    "job_id": "job-1",
+    "title": "Senior UX Designer Assessment",
+    "description": "Comprehensive assessment for Senior UX Designer position focusing on core competencies and advanced skills required for success in this role.",
+    "is_active": true,
+    "created_at": "2025-01-10T08:00:00Z",
+    "updated_at": "2025-01-10T08:00:00Z",
+    "created_by": "system",
+    "sections": [
+      {
+        "id": "job-1-section-1",
+        "title": "Senior Skills - Fundamentals",
+        "description": "Core technical and foundational skills assessment for senior ux designer position",
+        "order": 0,
+        "required": true,
+        "questions": [
+          {
+            "id": "q1",
+            "type": "single_choice",
+            "title": "What is the first phase of the design thinking process?",
+            "required": true,
+            "options": [
+              {
+                "id": "opt1",
+                "text": "Empathize",
+                "value": "empathize",
+                "is_correct": true
+              },
+              {
+                "id": "opt2",
+                "text": "Define",
+                "value": "define",
+                "is_correct": false
+              },
+              {
+                "id": "opt3",
+                "text": "Ideate",
+                "value": "ideate",
+                "is_correct": false
+              },
+              {
+                "id": "opt4",
+                "text": "Prototype",
+                "value": "prototype",
+                "is_correct": false
+              }
+            ],
+            "order": 0
+          },
+          {
+            "id": "q2",
+            "type": "multiple_choice",
+            "title": "Which are essential UX research methods? (Select all that apply)",
+            "required": true,
+            "options": [
+              {
+                "id": "opt1",
+                "text": "User interviews",
+                "value": "interviews",
+                "is_correct": true
+              },
+              {
+                "id": "opt2",
+                "text": "Usability testing",
+                "value": "usability_testing",
+                "is_correct": true
+              },
+              {
+                "id": "opt3",
+                "text": "A/B testing",
+                "value": "ab_testing",
+                "is_correct": true
+              },
+              {
+                "id": "opt4",
+                "text": "Database queries",
+                "value": "db_queries",
+                "is_correct": false
+              }
+            ],
+            "order": 1
+          },
+          {
+            "id": "q3",
+            "type": "single_choice",
+            "title": "What is the primary purpose of wireframing?",
+            "required": true,
+            "options": [
+              {
+                "id": "opt1",
+                "text": "Planning layout and information architecture",
+                "value": "layout_planning",
+                "is_correct": true
+              },
+              {
+                "id": "opt2",
+                "text": "Adding final visual design",
+                "value": "visual_design",
+                "is_correct": false
+              },
+              {
+                "id": "opt3",
+                "text": "Writing code",
+                "value": "writing_code",
+                "is_correct": false
+              },
+              {
+                "id": "opt4",
+                "text": "Testing performance",
+                "value": "testing_performance",
+                "is_correct": false
+              }
+            ],
+            "order": 2
+          },
+          {
+            "id": "q4",
+            "type": "single_choice",
+            "title": "Which tool is most commonly used for UI/UX design?",
+            "required": true,
+            "options": [
+              {
+                "id": "opt1",
+                "text": "Figma",
+                "value": "figma",
+                "is_correct": true
+              },
+              {
+                "id": "opt2",
+                "text": "Excel",
+                "value": "excel",
+                "is_correct": false
+              },
+              {
+                "id": "opt3",
+                "text": "PowerPoint",
+                "value": "powerpoint",
+                "is_correct": false
+              },
+              {
+                "id": "opt4",
+                "text": "Notepad",
+                "value": "notepad",
+                "is_correct": false
+              }
+            ],
+            "order": 3
+          },
+          {
+            "id": "q5",
+            "type": "multiple_choice",
+            "title": "What are key principles of good UX design? (Select all that apply)",
+            "required": true,
+            "options": [
+              {
+                "id": "opt1",
+                "text": "Usability",
+                "value": "usability",
+                "is_correct": true
+              },
+              {
+                "id": "opt2",
+                "text": "Accessibility",
+                "value": "accessibility",
+                "is_correct": true
+              },
+              {
+                "id": "opt3",
+                "text": "Consistency",
+                "value": "consistency",
+                "is_correct": true
+              },
+              {
+                "id": "opt4",
+                "text": "Complexity",
+                "value": "complexity",
+                "is_correct": false
+              }
+            ],
+            "order": 4
+          }
+        ]
+      },
+      {
+        "id": "job-1-section-2",
+        "title": "Senior Skills - Advanced Concepts",
+        "description": "Advanced concepts and professional practices for senior ux designer position",
+        "order": 1,
+        "required": true,
+        "questions": [
+          {
+            "id": "q6",
+            "type": "single_choice",
+            "title": "What is a user journey map?",
+            "required": true,
+            "options": [
+              {
+                "id": "opt1",
+                "text": "A visualization of user experience across touchpoints",
+                "value": "user_experience",
+                "is_correct": true
+              },
+              {
+                "id": "opt2",
+                "text": "A geographic map",
+                "value": "geographic",
+                "is_correct": false
+              },
+              {
+                "id": "opt3",
+                "text": "A flowchart of code",
+                "value": "code_flowchart",
+                "is_correct": false
+              },
+              {
+                "id": "opt4",
+                "text": "A database schema",
+                "value": "db_schema",
+                "is_correct": false
+              }
+            ],
+            "order": 0
+          },
+          {
+            "id": "q7",
+            "type": "multiple_choice",
+            "title": "Which are important accessibility considerations? (Select all that apply)",
+            "required": true,
+            "options": [
+              {
+                "id": "opt1",
+                "text": "Color contrast",
+                "value": "color_contrast",
+                "is_correct": true
+              },
+              {
+                "id": "opt2",
+                "text": "Alt text for images",
+                "value": "alt_text",
+                "is_correct": true
+              },
+              {
+                "id": "opt3",
+                "text": "Keyboard navigation",
+                "value": "keyboard_nav",
+                "is_correct": true
+              },
+              {
+                "id": "opt4",
+                "text": "Server performance",
+                "value": "server_performance",
+                "is_correct": false
+              }
+            ],
+            "order": 1
+          },
+          {
+            "id": "q8",
+            "type": "single_choice",
+            "title": "What does responsive design mean?",
+            "required": true,
+            "options": [
+              {
+                "id": "opt1",
+                "text": "Design adapts to different screen sizes",
+                "value": "screen_adaptation",
+                "is_correct": true
+              },
+              {
+                "id": "opt2",
+                "text": "Design responds quickly",
+                "value": "quick_response",
+                "is_correct": false
+              },
+              {
+                "id": "opt3",
+                "text": "Design uses animations",
+                "value": "animations",
+                "is_correct": false
+              },
+              {
+                "id": "opt4",
+                "text": "Design has sound effects",
+                "value": "sound_effects",
+                "is_correct": false
+              }
+            ],
+            "order": 2
+          },
+          {
+            "id": "q9",
+            "type": "single_choice",
+            "title": "What is information architecture in UX?",
+            "required": true,
+            "options": [
+              {
+                "id": "opt1",
+                "text": "Organizing and structuring content",
+                "value": "content_structure",
+                "is_correct": true
+              },
+              {
+                "id": "opt2",
+                "text": "Building architecture",
+                "value": "building_architecture",
+                "is_correct": false
+              },
+              {
+                "id": "opt3",
+                "text": "Software architecture",
+                "value": "software_architecture",
+                "is_correct": false
+              },
+              {
+                "id": "opt4",
+                "text": "Network architecture",
+                "value": "network_architecture",
+                "is_correct": false
+              }
+            ],
+            "order": 3
+          },
+          {
+            "id": "q10",
+            "type": "multiple_choice",
+            "title": "Which metrics are important for UX success? (Select all that apply)",
+            "required": true,
+            "options": [
+              {
+                "id": "opt1",
+                "text": "Task completion rate",
+                "value": "task_completion",
+                "is_correct": true
+              },
+              {
+                "id": "opt2",
+                "text": "User satisfaction scores",
+                "value": "satisfaction",
+                "is_correct": true
+              },
+              {
+                "id": "opt3",
+                "text": "Time on task",
+                "value": "time_on_task",
+                "is_correct": true
+              },
+              {
+                "id": "opt4",
+                "text": "Server uptime",
+                "value": "server_uptime",
+                "is_correct": false
+              }
+            ],
+            "order": 4
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "assessment-job-2-1",
+    "job_id": "job-2",
+    "title": "Principal UX Designer Assessment",
+    "description": "Comprehensive assessment for Principal UX Designer position focusing on core competencies and advanced skills required for success in this role.",
+    "is_active": true,
+    "created_at": "2025-01-11T08:00:00Z",
+    "updated_at": "2025-01-11T08:00:00Z",
+    "created_by": "system",
+    "sections": [
+      {
+        "id": "job-2-section-1",
+        "title": "Principal Skills - Fundamentals",
+        "description": "Core technical and foundational skills assessment for principal ux designer position",
+        "order": 0,
+        "required": true,
+        "questions": [
+          {
+            "id": "q1",
+            "type": "single_choice",
+            "title": "What is the first phase of the design thinking process?",
+            "required": true,
+            "options": [
+              {
+                "id": "opt1",
+                "text": "Empathize",
+                "value": "empathize",
+                "is_correct": true
+              },
+              {
+                "id": "opt2",
+                "text": "Define",
+                "value": "define",
+                "is_correct": false
+              },
+              {
+                "id": "opt3",
+                "text": "Ideate",
+                "value": "ideate",
+                "is_correct": false
+              },
+              {
+                "id": "opt4",
+                "text": "Prototype",
+                "value": "prototype",
+                "is_correct": false
+              }
+            ],
+            "order": 0
+          },
+          {
+            "id": "q2",
+            "type": "multiple_choice",
+            "title": "Which are essential UX research methods? (Select all that apply)",
+            "required": true,
+            "options": [
+              {
+                "id": "opt1",
+                "text": "User interviews",
+                "value": "interviews",
+                "is_correct": true
+              },
+              {
+                "id": "opt2",
+                "text": "Usability testing",
+                "value": "usability_testing",
+                "is_correct": true
+              },
+              {
+                "id": "opt3",
+                "text": "A/B testing",
+                "value": "ab_testing",
+                "is_correct": true
+              },
+              {
+                "id": "opt4",
+                "text": "Database queries",
+                "value": "db_queries",
+                "is_correct": false
+              }
+            ],
+            "order": 1
+          },
+          {
+            "id": "q3",
+            "type": "single_choice",
+            "title": "What is the primary purpose of wireframing?",
+            "required": true,
+            "options": [
+              {
+                "id": "opt1",
+                "text": "Planning layout and information architecture",
+                "value": "layout_planning",
+                "is_correct": true
+              },
+              {
+                "id": "opt2",
+                "text": "Adding final visual design",
+                "value": "visual_design",
+                "is_correct": false
+              },
+              {
+                "id": "opt3",
+                "text": "Writing code",
+                "value": "writing_code",
+                "is_correct": false
+              },
+              {
+                "id": "opt4",
+                "text": "Testing performance",
+                "value": "testing_performance",
+                "is_correct": false
+              }
+            ],
+            "order": 2
+          },
+          {
+            "id": "q4",
+            "type": "single_choice",
+            "title": "Which tool is most commonly used for UI/UX design?",
+            "required": true,
+            "options": [
+              {
+                "id": "opt1",
+                "text": "Figma",
+                "value": "figma",
+                "is_correct": true
+              },
+              {
+                "id": "opt2",
+                "text": "Excel",
+                "value": "excel",
+                "is_correct": false
+              },
+              {
+                "id": "opt3",
+                "text": "PowerPoint",
+                "value": "powerpoint",
+                "is_correct": false
+              },
+              {
+                "id": "opt4",
+                "text": "Notepad",
+                "value": "notepad",
+                "is_correct": false
+              }
+            ],
+            "order": 3
+          },
+          {
+            "id": "q5",
+            "type": "multiple_choice",
+            "title": "What are key principles of good UX design? (Select all that apply)",
+            "required": true,
+            "options": [
+              {
+                "id": "opt1",
+                "text": "Usability",
+                "value": "usability",
+                "is_correct": true
+              },
+              {
+                "id": "opt2",
+                "text": "Accessibility",
+                "value": "accessibility",
+                "is_correct": true
+              },
+              {
+                "id": "opt3",
+                "text": "Consistency",
+                "value": "consistency",
+                "is_correct": true
+              },
+              {
+                "id": "opt4",
+                "text": "Complexity",
+                "value": "complexity",
+                "is_correct": false
+              }
+            ],
+            "order": 4
+          }
+        ]
+      },
+      {
+        "id": "job-2-section-2",
+        "title": "Principal Skills - Advanced Concepts",
+        "description": "Advanced concepts and professional practices for principal ux designer position",
+        "order": 1,
+        "required": true,
+        "questions": [
+          {
+            "id": "q6",
+            "type": "single_choice",
+            "title": "What is a user journey map?",
+            "required": true,
+            "options": [
+              {
+                "id": "opt1",
+                "text": "A visualization of user experience across touchpoints",
+                "value": "user_experience",
+                "is_correct": true
+              },
+              {
+                "id": "opt2",
+                "text": "A geographic map",
+                "value": "geographic",
+                "is_correct": false
+              },
+              {
+                "id": "opt3",
+                "text": "A flowchart of code",
+                "value": "code_flowchart",
+                "is_correct": false
+              },
+              {
+                "id": "opt4",
+                "text": "A database schema",
+                "value": "db_schema",
+                "is_correct": false
+              }
+            ],
+            "order": 0
+          },
+          {
+            "id": "q7",
+            "type": "multiple_choice",
+            "title": "Which are important accessibility considerations? (Select all that apply)",
+            "required": true,
+            "options": [
+              {
+                "id": "opt1",
+                "text": "Color contrast",
+                "value": "color_contrast",
+                "is_correct": true
+              },
+              {
+                "id": "opt2",
+                "text": "Alt text for images",
+                "value": "alt_text",
+                "is_correct": true
+              },
+              {
+                "id": "opt3",
+                "text": "Keyboard navigation",
+                "value": "keyboard_nav",
+                "is_correct": true
+              },
+              {
+                "id": "opt4",
+                "text": "Server performance",
+                "value": "server_performance",
+                "is_correct": false
+              }
+            ],
+            "order": 1
+          },
+          {
+            "id": "q8",
+            "type": "single_choice",
+            "title": "What does responsive design mean?",
+            "required": true,
+            "options": [
+              {
+                "id": "opt1",
+                "text": "Design adapts to different screen sizes",
+                "value": "screen_adaptation",
+                "is_correct": true
+              },
+              {
+                "id": "opt2",
+                "text": "Design responds quickly",
+                "value": "quick_response",
+                "is_correct": false
+              },
+              {
+                "id": "opt3",
+                "text": "Design uses animations",
+                "value": "animations",
+                "is_correct": false
+              },
+              {
+                "id": "opt4",
+                "text": "Design has sound effects",
+                "value": "sound_effects",
+                "is_correct": false
+              }
+            ],
+            "order": 2
+          },
+          {
+            "id": "q9",
+            "type": "single_choice",
+            "title": "What is information architecture in UX?",
+            "required": true,
+            "options": [
+              {
+                "id": "opt1",
+                "text": "Organizing and structuring content",
+                "value": "content_structure",
+                "is_correct": true
+              },
+              {
+                "id": "opt2",
+                "text": "Building architecture",
+                "value": "building_architecture",
+                "is_correct": false
+              },
+              {
+                "id": "opt3",
+                "text": "Software architecture",
+                "value": "software_architecture",
+                "is_correct": false
+              },
+              {
+                "id": "opt4",
+                "text": "Network architecture",
+                "value": "network_architecture",
+                "is_correct": false
+              }
+            ],
+            "order": 3
+          },
+          {
+            "id": "q10",
+            "type": "multiple_choice",
+            "title": "Which metrics are important for UX success? (Select all that apply)",
+            "required": true,
+            "options": [
+              {
+                "id": "opt1",
+                "text": "Task completion rate",
+                "value": "task_completion",
+                "is_correct": true
+              },
+              {
+                "id": "opt2",
+                "text": "User satisfaction scores",
+                "value": "satisfaction",
+                "is_correct": true
+              },
+              {
+                "id": "opt3",
+                "text": "Time on task",
+                "value": "time_on_task",
+                "is_correct": true
+              },
+              {
+                "id": "opt4",
+                "text": "Server uptime",
+                "value": "server_uptime",
+                "is_correct": false
+              }
+            ],
+            "order": 4
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "assessment-job-3-1",
+    "job_id": "job-3",
+    "title": "Lead UX Designer Assessment",
+    "description": "Comprehensive assessment for Lead UX Designer position focusing on core competencies and advanced skills required for success in this role.",
+    "is_active": true,
+    "created_at": "2025-01-12T08:00:00Z",
+    "updated_at": "2025-01-12T08:00:00Z",
+    "created_by": "system",
+    "sections": [
+      {
+        "id": "job-3-section-1",
+        "title": "Lead Skills - Fundamentals",
+        "description": "Core technical and foundational skills assessment for lead ux designer position",
+        "order": 0,
+        "required": true,
+        "questions": [
+          {
+            "id": "q1",
+            "type": "single_choice",
+            "title": "What is the first phase of the design thinking process?",
+            "required": true,
+            "options": [
+              {
+                "id": "opt1",
+                "text": "Empathize",
+                "value": "empathize",
+                "is_correct": true
+              },
+              {
+                "id": "opt2",
+                "text": "Define",
+                "value": "define",
+                "is_correct": false
+              },
+              {
+                "id": "opt3",
+                "text": "Ideate",
+                "value": "ideate",
+                "is_correct": false
+              },
+              {
+                "id": "opt4",
+                "text": "Prototype",
+                "value": "prototype",
+                "is_correct": false
+              }
+            ],
+            "order": 0
+          },
+          {
+            "id": "q2",
+            "type": "multiple_choice",
+            "title": "Which are essential UX research methods? (Select all that apply)",
+            "required": true,
+            "options": [
+              {
+                "id": "opt1",
+                "text": "User interviews",
+                "value": "interviews",
+                "is_correct": true
+              },
+              {
+                "id": "opt2",
+                "text": "Usability testing",
+                "value": "usability_testing",
+                "is_correct": true
+              },
+              {
+                "id": "opt3",
+                "text": "A/B testing",
+                "value": "ab_testing",
+                "is_correct": true
+              },
+              {
+                "id": "opt4",
+                "text": "Database queries",
+                "value": "db_queries",
+                "is_correct": false
+              }
+            ],
+            "order": 1
+          },
+          {
+            "id": "q3",
+            "type": "single_choice",
+            "title": "What is the primary purpose of wireframing?",
+            "required": true,
+            "options": [
+              {
+                "id": "opt1",
+                "text": "Planning layout and information architecture",
+                "value": "layout_planning",
+                "is_correct": true
+              },
+              {
+                "id": "opt2",
+                "text": "Adding final visual design",
+                "value": "visual_design",
+                "is_correct": false
+              },
+              {
+                "id": "opt3",
+                "text": "Writing code",
+                "value": "writing_code",
+                "is_correct": false
+              },
+              {
+                "id": "opt4",
+                "text": "Testing performance",
+                "value": "testing_performance",
+                "is_correct": false
+              }
+            ],
+            "order": 2
+          },
+          {
+            "id": "q4",
+            "type": "single_choice",
+            "title": "Which tool is most commonly used for UI/UX design?",
+            "required": true,
+            "options": [
+              {
+                "id": "opt1",
+                "text": "Figma",
+                "value": "figma",
+                "is_correct": true
+              },
+              {
+                "id": "opt2",
+                "text": "Excel",
+                "value": "excel",
+                "is_correct": false
+              },
+              {
+                "id": "opt3",
+                "text": "PowerPoint",
+                "value": "powerpoint",
+                "is_correct": false
+              },
+              {
+                "id": "opt4",
+                "text": "Notepad",
+                "value": "notepad",
+                "is_correct": false
+              }
+            ],
+            "order": 3
+          },
+          {
+            "id": "q5",
+            "type": "multiple_choice",
+            "title": "What are key principles of good UX design? (Select all that apply)",
+            "required": true,
+            "options": [
+              {
+                "id": "opt1",
+                "text": "Usability",
+                "value": "usability",
+                "is_correct": true
+              },
+              {
+                "id": "opt2",
+                "text": "Accessibility",
+                "value": "accessibility",
+                "is_correct": true
+              },
+              {
+                "id": "opt3",
+                "text": "Consistency",
+                "value": "consistency",
+                "is_correct": true
+              },
+              {
+                "id": "opt4",
+                "text": "Complexity",
+                "value": "complexity",
+                "is_correct": false
+              }
+            ],
+            "order": 4
+          }
+        ]
+      },
+      {
+        "id": "job-3-section-2",
+        "title": "Lead Skills - Advanced Concepts",
+        "description": "Advanced concepts and professional practices for lead ux designer position",
+        "order": 1,
+        "required": true,
+        "questions": [
+          {
+            "id": "q6",
+            "type": "single_choice",
+            "title": "What is a user journey map?",
+            "required": true,
+            "options": [
+              {
+                "id": "opt1",
+                "text": "A visualization of user experience across touchpoints",
+                "value": "user_experience",
+                "is_correct": true
+              },
+              {
+                "id": "opt2",
+                "text": "A geographic map",
+                "value": "geographic",
+                "is_correct": false
+              },
+              {
+                "id": "opt3",
+                "text": "A flowchart of code",
+                "value": "code_flowchart",
+                "is_correct": false
+              },
+              {
+                "id": "opt4",
+                "text": "A database schema",
+                "value": "db_schema",
+                "is_correct": false
+              }
+            ],
+            "order": 0
+          },
+          {
+            "id": "q7",
+            "type": "multiple_choice",
+            "title": "Which are important accessibility considerations? (Select all that apply)",
+            "required": true,
+            "options": [
+              {
+                "id": "opt1",
+                "text": "Color contrast",
+                "value": "color_contrast",
+                "is_correct": true
+              },
+              {
+                "id": "opt2",
+                "text": "Alt text for images",
+                "value": "alt_text",
+                "is_correct": true
+              },
+              {
+                "id": "opt3",
+                "text": "Keyboard navigation",
+                "value": "keyboard_nav",
+                "is_correct": true
+              },
+              {
+                "id": "opt4",
+                "text": "Server performance",
+                "value": "server_performance",
+                "is_correct": false
+              }
+            ],
+            "order": 1
+          },
+          {
+            "id": "q8",
+            "type": "single_choice",
+            "title": "What does responsive design mean?",
+            "required": true,
+            "options": [
+              {
+                "id": "opt1",
+                "text": "Design adapts to different screen sizes",
+                "value": "screen_adaptation",
+                "is_correct": true
+              },
+              {
+                "id": "opt2",
+                "text": "Design responds quickly",
+                "value": "quick_response",
+                "is_correct": false
+              },
+              {
+                "id": "opt3",
+                "text": "Design uses animations",
+                "value": "animations",
+                "is_correct": false
+              },
+              {
+                "id": "opt4",
+                "text": "Design has sound effects",
+                "value": "sound_effects",
+                "is_correct": false
+              }
+            ],
+            "order": 2
+          },
+          {
+            "id": "q9",
+            "type": "single_choice",
+            "title": "What is information architecture in UX?",
+            "required": true,
+            "options": [
+              {
+                "id": "opt1",
+                "text": "Organizing and structuring content",
+                "value": "content_structure",
+                "is_correct": true
+              },
+              {
+                "id": "opt2",
+                "text": "Building architecture",
+                "value": "building_architecture",
+                "is_correct": false
+              },
+              {
+                "id": "opt3",
+                "text": "Software architecture",
+                "value": "software_architecture",
+                "is_correct": false
+              },
+              {
+                "id": "opt4",
+                "text": "Network architecture",
+                "value": "network_architecture",
+                "is_correct": false
+              }
+            ],
+            "order": 3
+          },
+          {
+            "id": "q10",
+            "type": "multiple_choice",
+            "title": "Which metrics are important for UX success? (Select all that apply)",
+            "required": true,
+            "options": [
+              {
+                "id": "opt1",
+                "text": "Task completion rate",
+                "value": "task_completion",
+                "is_correct": true
+              },
+              {
+                "id": "opt2",
+                "text": "User satisfaction scores",
+                "value": "satisfaction",
+                "is_correct": true
+              },
+              {
+                "id": "opt3",
+                "text": "Time on task",
+                "value": "time_on_task",
+                "is_correct": true
+              },
+              {
+                "id": "opt4",
+                "text": "Server uptime",
+                "value": "server_uptime",
+                "is_correct": false
+              }
+            ],
+            "order": 4
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "assessment-job-4-1",
+    "job_id": "job-4",
+    "title": "UX Design Manager Assessment",
+    "description": "Comprehensive assessment for UX Design Manager position focusing on core competencies and advanced skills required for success in this role.",
+    "is_active": true,
+    "created_at": "2025-01-13T08:00:00Z",
+    "updated_at": "2025-01-13T08:00:00Z",
+    "created_by": "system",
+    "sections": [
+      {
+        "id": "job-4-section-1",
+        "title": "UX Skills - Fundamentals",
+        "description": "Core technical and foundational skills assessment for ux design manager position",
+        "order": 0,
+        "required": true,
+        "questions": [
+          {
+            "id": "q1",
+            "type": "single_choice",
+            "title": "What is the first phase of the design thinking process?",
+            "required": true,
+            "options": [
+              {
+                "id": "opt1",
+                "text": "Empathize",
+                "value": "empathize",
+                "is_correct": true
+              },
+              {
+                "id": "opt2",
+                "text": "Define",
+                "value": "define",
+                "is_correct": false
+              },
+              {
+                "id": "opt3",
+                "text": "Ideate",
+                "value": "ideate",
+                "is_correct": false
+              },
+              {
+                "id": "opt4",
+                "text": "Prototype",
+                "value": "prototype",
+                "is_correct": false
+              }
+            ],
+            "order": 0
+          },
+          {
+            "id": "q2",
+            "type": "multiple_choice",
+            "title": "Which are essential UX research methods? (Select all that apply)",
+            "required": true,
+            "options": [
+              {
+                "id": "opt1",
+                "text": "User interviews",
+                "value": "interviews",
+                "is_correct": true
+              },
+              {
+                "id": "opt2",
+                "text": "Usability testing",
+                "value": "usability_testing",
+                "is_correct": true
+              },
+              {
+                "id": "opt3",
+                "text": "A/B testing",
+                "value": "ab_testing",
+                "is_correct": true
+              },
+              {
+                "id": "opt4",
+                "text": "Database queries",
+                "value": "db_queries",
+                "is_correct": false
+              }
+            ],
+            "order": 1
+          },
+          {
+            "id": "q3",
+            "type": "single_choice",
+            "title": "What is the primary purpose of wireframing?",
+            "required": true,
+            "options": [
+              {
+                "id": "opt1",
+                "text": "Planning layout and information architecture",
+                "value": "layout_planning",
+                "is_correct": true
+              },
+              {
+                "id": "opt2",
+                "text": "Adding final visual design",
+                "value": "visual_design",
+                "is_correct": false
+              },
+              {
+                "id": "opt3",
+                "text": "Writing code",
+                "value": "writing_code",
+                "is_correct": false
+              },
+              {
+                "id": "opt4",
+                "text": "Testing performance",
+                "value": "testing_performance",
+                "is_correct": false
+              }
+            ],
+            "order": 2
+          },
+          {
+            "id": "q4",
+            "type": "single_choice",
+            "title": "Which tool is most commonly used for UI/UX design?",
+            "required": true,
+            "options": [
+              {
+                "id": "opt1",
+                "text": "Figma",
+                "value": "figma",
+                "is_correct": true
+              },
+              {
+                "id": "opt2",
+                "text": "Excel",
+                "value": "excel",
+                "is_correct": false
+              },
+              {
+                "id": "opt3",
+                "text": "PowerPoint",
+                "value": "powerpoint",
+                "is_correct": false
+              },
+              {
+                "id": "opt4",
+                "text": "Notepad",
+                "value": "notepad",
+                "is_correct": false
+              }
+            ],
+            "order": 3
+          },
+          {
+            "id": "q5",
+            "type": "multiple_choice",
+            "title": "What are key principles of good UX design? (Select all that apply)",
+            "required": true,
+            "options": [
+              {
+                "id": "opt1",
+                "text": "Usability",
+                "value": "usability",
+                "is_correct": true
+              },
+              {
+                "id": "opt2",
+                "text": "Accessibility",
+                "value": "accessibility",
+                "is_correct": true
+              },
+              {
+                "id": "opt3",
+                "text": "Consistency",
+                "value": "consistency",
+                "is_correct": true
+              },
+              {
+                "id": "opt4",
+                "text": "Complexity",
+                "value": "complexity",
+                "is_correct": false
+              }
+            ],
+            "order": 4
+          }
+        ]
+      },
+      {
+        "id": "job-4-section-2",
+        "title": "UX Skills - Advanced Concepts",
+        "description": "Advanced concepts and professional practices for ux design manager position",
+        "order": 1,
+        "required": true,
+        "questions": [
+          {
+            "id": "q6",
+            "type": "single_choice",
+            "title": "What is a user journey map?",
+            "required": true,
+            "options": [
+              {
+                "id": "opt1",
+                "text": "A visualization of user experience across touchpoints",
+                "value": "user_experience",
+                "is_correct": true
+              },
+              {
+                "id": "opt2",
+                "text": "A geographic map",
+                "value": "geographic",
+                "is_correct": false
+              },
+              {
+                "id": "opt3",
+                "text": "A flowchart of code",
+                "value": "code_flowchart",
+                "is_correct": false
+              },
+              {
+                "id": "opt4",
+                "text": "A database schema",
+                "value": "db_schema",
+                "is_correct": false
+              }
+            ],
+            "order": 0
+          },
+          {
+            "id": "q7",
+            "type": "multiple_choice",
+            "title": "Which are important accessibility considerations? (Select all that apply)",
+            "required": true,
+            "options": [
+              {
+                "id": "opt1",
+                "text": "Color contrast",
+                "value": "color_contrast",
+                "is_correct": true
+              },
+              {
+                "id": "opt2",
+                "text": "Alt text for images",
+                "value": "alt_text",
+                "is_correct": true
+              },
+              {
+                "id": "opt3",
+                "text": "Keyboard navigation",
+                "value": "keyboard_nav",
+                "is_correct": true
+              },
+              {
+                "id": "opt4",
+                "text": "Server performance",
+                "value": "server_performance",
+                "is_correct": false
+              }
+            ],
+            "order": 1
+          },
+          {
+            "id": "q8",
+            "type": "single_choice",
+            "title": "What does responsive design mean?",
+            "required": true,
+            "options": [
+              {
+                "id": "opt1",
+                "text": "Design adapts to different screen sizes",
+                "value": "screen_adaptation",
+                "is_correct": true
+              },
+              {
+                "id": "opt2",
+                "text": "Design responds quickly",
+                "value": "quick_response",
+                "is_correct": false
+              },
+              {
+                "id": "opt3",
+                "text": "Design uses animations",
+                "value": "animations",
+                "is_correct": false
+              },
+              {
+                "id": "opt4",
+                "text": "Design has sound effects",
+                "value": "sound_effects",
+                "is_correct": false
+              }
+            ],
+            "order": 2
+          },
+          {
+            "id": "q9",
+            "type": "single_choice",
+            "title": "What is information architecture in UX?",
+            "required": true,
+            "options": [
+              {
+                "id": "opt1",
+                "text": "Organizing and structuring content",
+                "value": "content_structure",
+                "is_correct": true
+              },
+              {
+                "id": "opt2",
+                "text": "Building architecture",
+                "value": "building_architecture",
+                "is_correct": false
+              },
+              {
+                "id": "opt3",
+                "text": "Software architecture",
+                "value": "software_architecture",
+                "is_correct": false
+              },
+              {
+                "id": "opt4",
+                "text": "Network architecture",
+                "value": "network_architecture",
+                "is_correct": false
+              }
+            ],
+            "order": 3
+          },
+          {
+            "id": "q10",
+            "type": "multiple_choice",
+            "title": "Which metrics are important for UX success? (Select all that apply)",
+            "required": true,
+            "options": [
+              {
+                "id": "opt1",
+                "text": "Task completion rate",
+                "value": "task_completion",
+                "is_correct": true
+              },
+              {
+                "id": "opt2",
+                "text": "User satisfaction scores",
+                "value": "satisfaction",
+                "is_correct": true
+              },
+              {
+                "id": "opt3",
+                "text": "Time on task",
+                "value": "time_on_task",
+                "is_correct": true
+              },
+              {
+                "id": "opt4",
+                "text": "Server uptime",
+                "value": "server_uptime",
+                "is_correct": false
+              }
+            ],
+            "order": 4
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "assessment-job-5-1",
+    "job_id": "job-5",
+    "title": "Staff UX Designer Assessment",
+    "description": "Comprehensive assessment for Staff UX Designer position focusing on core competencies and advanced skills required for success in this role.",
+    "is_active": true,
+    "created_at": "2025-01-14T08:00:00Z",
+    "updated_at": "2025-01-14T08:00:00Z",
+    "created_by": "system",
+    "sections": [
+      {
+        "id": "job-5-section-1",
+        "title": "Staff Skills - Fundamentals",
+        "description": "Core technical and foundational skills assessment for staff ux designer position",
+        "order": 0,
+        "required": true,
+        "questions": [
+          {
+            "id": "q1",
+            "type": "single_choice",
+            "title": "What is the first phase of the design thinking process?",
+            "required": true,
+            "options": [
+              {
+                "id": "opt1",
+                "text": "Empathize",
+                "value": "empathize",
+                "is_correct": true
+              },
+              {
+                "id": "opt2",
+                "text": "Define",
+                "value": "define",
+                "is_correct": false
+              },
+              {
+                "id": "opt3",
+                "text": "Ideate",
+                "value": "ideate",
+                "is_correct": false
+              },
+              {
+                "id": "opt4",
+                "text": "Prototype",
+                "value": "prototype",
+                "is_correct": false
+              }
+            ],
+            "order": 0
+          },
+          {
+            "id": "q2",
+            "type": "multiple_choice",
+            "title": "Which are essential UX research methods? (Select all that apply)",
+            "required": true,
+            "options": [
+              {
+                "id": "opt1",
+                "text": "User interviews",
+                "value": "interviews",
+                "is_correct": true
+              },
+              {
+                "id": "opt2",
+                "text": "Usability testing",
+                "value": "usability_testing",
+                "is_correct": true
+              },
+              {
+                "id": "opt3",
+                "text": "A/B testing",
+                "value": "ab_testing",
+                "is_correct": true
+              },
+              {
+                "id": "opt4",
+                "text": "Database queries",
+                "value": "db_queries",
+                "is_correct": false
+              }
+            ],
+            "order": 1
+          },
+          {
+            "id": "q3",
+            "type": "single_choice",
+            "title": "What is the primary purpose of wireframing?",
+            "required": true,
+            "options": [
+              {
+                "id": "opt1",
+                "text": "Planning layout and information architecture",
+                "value": "layout_planning",
+                "is_correct": true
+              },
+              {
+                "id": "opt2",
+                "text": "Adding final visual design",
+                "value": "visual_design",
+                "is_correct": false
+              },
+              {
+                "id": "opt3",
+                "text": "Writing code",
+                "value": "writing_code",
+                "is_correct": false
+              },
+              {
+                "id": "opt4",
+                "text": "Testing performance",
+                "value": "testing_performance",
+                "is_correct": false
+              }
+            ],
+            "order": 2
+          },
+          {
+            "id": "q4",
+            "type": "single_choice",
+            "title": "Which tool is most commonly used for UI/UX design?",
+            "required": true,
+            "options": [
+              {
+                "id": "opt1",
+                "text": "Figma",
+                "value": "figma",
+                "is_correct": true
+              },
+              {
+                "id": "opt2",
+                "text": "Excel",
+                "value": "excel",
+                "is_correct": false
+              },
+              {
+                "id": "opt3",
+                "text": "PowerPoint",
+                "value": "powerpoint",
+                "is_correct": false
+              },
+              {
+                "id": "opt4",
+                "text": "Notepad",
+                "value": "notepad",
+                "is_correct": false
+              }
+            ],
+            "order": 3
+          },
+          {
+            "id": "q5",
+            "type": "multiple_choice",
+            "title": "What are key principles of good UX design? (Select all that apply)",
+            "required": true,
+            "options": [
+              {
+                "id": "opt1",
+                "text": "Usability",
+                "value": "usability",
+                "is_correct": true
+              },
+              {
+                "id": "opt2",
+                "text": "Accessibility",
+                "value": "accessibility",
+                "is_correct": true
+              },
+              {
+                "id": "opt3",
+                "text": "Consistency",
+                "value": "consistency",
+                "is_correct": true
+              },
+              {
+                "id": "opt4",
+                "text": "Complexity",
+                "value": "complexity",
+                "is_correct": false
+              }
+            ],
+            "order": 4
+          }
+        ]
+      },
+      {
+        "id": "job-5-section-2",
+        "title": "Staff Skills - Advanced Concepts",
+        "description": "Advanced concepts and professional practices for staff ux designer position",
+        "order": 1,
+        "required": true,
+        "questions": [
+          {
+            "id": "q6",
+            "type": "single_choice",
+            "title": "What is a user journey map?",
+            "required": true,
+            "options": [
+              {
+                "id": "opt1",
+                "text": "A visualization of user experience across touchpoints",
+                "value": "user_experience",
+                "is_correct": true
+              },
+              {
+                "id": "opt2",
+                "text": "A geographic map",
+                "value": "geographic",
+                "is_correct": false
+              },
+              {
+                "id": "opt3",
+                "text": "A flowchart of code",
+                "value": "code_flowchart",
+                "is_correct": false
+              },
+              {
+                "id": "opt4",
+                "text": "A database schema",
+                "value": "db_schema",
+                "is_correct": false
+              }
+            ],
+            "order": 0
+          },
+          {
+            "id": "q7",
+            "type": "multiple_choice",
+            "title": "Which are important accessibility considerations? (Select all that apply)",
+            "required": true,
+            "options": [
+              {
+                "id": "opt1",
+                "text": "Color contrast",
+                "value": "color_contrast",
+                "is_correct": true
+              },
+              {
+                "id": "opt2",
+                "text": "Alt text for images",
+                "value": "alt_text",
+                "is_correct": true
+              },
+              {
+                "id": "opt3",
+                "text": "Keyboard navigation",
+                "value": "keyboard_nav",
+                "is_correct": true
+              },
+              {
+                "id": "opt4",
+                "text": "Server performance",
+                "value": "server_performance",
+                "is_correct": false
+              }
+            ],
+            "order": 1
+          },
+          {
+            "id": "q8",
+            "type": "single_choice",
+            "title": "What does responsive design mean?",
+            "required": true,
+            "options": [
+              {
+                "id": "opt1",
+                "text": "Design adapts to different screen sizes",
+                "value": "screen_adaptation",
+                "is_correct": true
+              },
+              {
+                "id": "opt2",
+                "text": "Design responds quickly",
+                "value": "quick_response",
+                "is_correct": false
+              },
+              {
+                "id": "opt3",
+                "text": "Design uses animations",
+                "value": "animations",
+                "is_correct": false
+              },
+              {
+                "id": "opt4",
+                "text": "Design has sound effects",
+                "value": "sound_effects",
+                "is_correct": false
+              }
+            ],
+            "order": 2
+          },
+          {
+            "id": "q9",
+            "type": "single_choice",
+            "title": "What is information architecture in UX?",
+            "required": true,
+            "options": [
+              {
+                "id": "opt1",
+                "text": "Organizing and structuring content",
+                "value": "content_structure",
+                "is_correct": true
+              },
+              {
+                "id": "opt2",
+                "text": "Building architecture",
+                "value": "building_architecture",
+                "is_correct": false
+              },
+              {
+                "id": "opt3",
+                "text": "Software architecture",
+                "value": "software_architecture",
+                "is_correct": false
+              },
+              {
+                "id": "opt4",
+                "text": "Network architecture",
+                "value": "network_architecture",
+                "is_correct": false
+              }
+            ],
+            "order": 3
+          },
+          {
+            "id": "q10",
+            "type": "multiple_choice",
+            "title": "Which metrics are important for UX success? (Select all that apply)",
+            "required": true,
+            "options": [
+              {
+                "id": "opt1",
+                "text": "Task completion rate",
+                "value": "task_completion",
+                "is_correct": true
+              },
+              {
+                "id": "opt2",
+                "text": "User satisfaction scores",
+                "value": "satisfaction",
+                "is_correct": true
+              },
+              {
+                "id": "opt3",
+                "text": "Time on task",
+                "value": "time_on_task",
+                "is_correct": true
+              },
+              {
+                "id": "opt4",
+                "text": "Server uptime",
+                "value": "server_uptime",
+                "is_correct": false
+              }
+            ],
+            "order": 4
+          }
+        ]
+      }
+    ]
+  }
+]
