@@ -114,7 +114,7 @@ const CandidatesPage: React.FC = () => {
       <div className="mb-6 md:mb-8">
         <h1 className="text-2xl md:text-3xl font-bold">Candidates</h1>
         <p className="text-sm md:text-base text-muted-foreground mt-1">
-          View and manage all candidates across all job positions
+          View and Handle candidates across multiple job positions
         </p>
       </div>
 
@@ -148,10 +148,10 @@ const CandidatesPage: React.FC = () => {
               <SelectItem value="all">All Stages</SelectItem>
               <SelectItem value="applied">Applied</SelectItem>
               <SelectItem value="screen">Screening</SelectItem>
-              <SelectItem value="tech">Technical</SelectItem>
-              <SelectItem value="offer">Offer</SelectItem>
               <SelectItem value="hired">Hired</SelectItem>
               <SelectItem value="rejected">Rejected</SelectItem>
+              <SelectItem value="tech">Technical</SelectItem>
+              <SelectItem value="offer">Offer</SelectItem>
             </SelectContent>
           </Select>
 

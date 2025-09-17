@@ -226,7 +226,7 @@ const JobsPage = () => {
         <div className="text-center md:text-left">
           <h1 className="text-2xl md:text-3xl font-bold">Jobs</h1>
           <p className="text-sm md:text-base text-muted-foreground mt-1">
-            Manage your job postings and track applications
+            Handle job listings and application tracking
           </p>
         </div>
         
@@ -409,9 +409,7 @@ const JobsPage = () => {
                           <CardHeader className="pb-2 md:pb-3 p-3 md:p-6">
                             <div className="flex items-start md:items-center justify-between gap-3">
                               <div className="flex items-start md:items-center space-x-2 md:space-x-3 flex-1 min-w-0">
-                                {/* <div className="p-2 md:p-1 hover:bg-muted rounded touch-manipulation flex-shrink-0">
-                                  <MoreHorizontal className="h-4 w-4 text-muted-foreground" />
-                                </div> */}
+                              
                                 
                                 <div className="flex-1 min-w-0">
                                   <CardTitle className="text-base md:text-lg">

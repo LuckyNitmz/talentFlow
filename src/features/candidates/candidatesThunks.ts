@@ -74,7 +74,7 @@ export const updateCandidateStage = createAsyncThunk(
   }
 );
 
-// ✅ NEW: Update candidate stage with timeline entry
+//NEW: Update candidate stage with timeline entry
 export const updateCandidateStageWithTimeline = createAsyncThunk(
   'candidates/updateCandidateStageWithTimeline',
   async ({

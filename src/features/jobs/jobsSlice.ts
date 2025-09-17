@@ -1,222 +1,3 @@
-// import { createSlice, PayloadAction, createSelector } from '@reduxjs/toolkit';
-// import type { Job } from '@/lib/database';
-// import {
-//   fetchJobs,
-//   fetchJobById,
-//   createJob,
-//   updateJob,
-//   deleteJob,
-//   reorderJobs
-// } from '@/features/jobs/jobsThunks';
-
-// interface JobsState {
-//   jobs: Job[];
-//   currentJob: Job | null;
-//   loading: boolean;
-//   error: string | null;
-//   filters: {
-//     search: string;
-//     status: 'all' | 'active' | 'draft' | 'archived';
-//   };
-//   pagination: {
-//     currentPage: number;
-//     itemsPerPage: number;
-//     totalJobs: number;
-//     totalPages: number;
-//   };
-// }
-
-// const initialState: JobsState = {
-//   jobs: [],
-//   currentJob: null,
-//   loading: false,
-//   error: null,
-//   filters: {
-//     search: '',
-//     status: 'all'
-//   },
-//   pagination: {
-//     currentPage: 1,
-//     itemsPerPage: 5,
-//     totalJobs: 0,
-//     totalPages: 0
-//   }
-// };
-
-// const jobsSlice = createSlice({
-//   name: 'jobs',
-//   initialState,
-//   reducers: {
-//     setFilters: (state, action: PayloadAction<Partial<typeof state.filters>>) => {
-//       state.filters = { ...state.filters, ...action.payload };
-//       state.pagination.currentPage = 1; // reset page on filter change
-//     },
-//     setPagination: (state, action: PayloadAction<Partial<typeof state.pagination>>) => {
-//       state.pagination = { ...state.pagination, ...action.payload };
-//     },
-//     clearError: (state) => {
-//       state.error = null;
-//     }
-//   },
-//   extraReducers: (builder) => {
-//     /* ---------------- Fetch Jobs ---------------- */
-//     builder
-//       .addCase(fetchJobs.pending, (state) => {
-//         state.loading = true;
-//         state.error = null;
-//       })
-//       .addCase(fetchJobs.fulfilled, (state, action) => {
-//     state.loading = false;
-
-//     console.log("🔍 Redux - Received payload:", action.payload);
-  
-//     // ✅ FIXED: Handle MSW response structure correctly
-//     if ( action.payload?.data?.jobs) {
-//     // if (action.payload?.success && action.payload?.data?.jobs) {
-//     state.jobs = action.payload.data.jobs;
-//     state.pagination = {
-//       ...state.pagination,
-//       totalJobs: action.payload.data.pagination?.total_items || 0,
-//       totalPages: action.payload.data.pagination?.total_pages || 0
-//     };
-//     console.log('✅ Successfully processed jobs from IndexedDB:', state.jobs.length);
-//   } else {
-//     console.error('❌ Unexpected jobs payload structure:', action.payload);
-//     state.jobs = [];
-//   }
-// })
-
-//       .addCase(fetchJobs.rejected, (state, action) => {
-//         state.loading = false;
-//         state.error = (action.payload as string) || 'Failed to fetch jobs';
-//         state.jobs = [];
-//       });
-
-//     /* ---------------- Fetch Single Job ---------------- */
-//     builder
-//       .addCase(fetchJobById.pending, (state) => {
-//         state.loading = true;
-//         state.error = null;
-//       })
-//       .addCase(fetchJobById.fulfilled, (state, action) => {
-//         state.loading = false;
-//         state.currentJob = action.payload?.data || null;
-//       })
-//       .addCase(fetchJobById.rejected, (state, action) => {
-//         state.loading = false;
-//         state.error = (action.payload as string) || 'Failed to fetch job';
-//       });
-
-//     /* ---------------- Create Job ---------------- */
-//     builder
-//       .addCase(createJob.pending, (state) => {
-//         state.loading = true;
-//         state.error = null;
-//       })
-//       .addCase(createJob.fulfilled, (state, action) => {
-//         state.loading = false;
-//         const newJob = action.payload?.data;
-//         if (newJob) {
-//           state.jobs.unshift(newJob);
-//         }
-//       })
-//       .addCase(createJob.rejected, (state, action) => {
-//         state.loading = false;
-//         state.error = (action.payload as string) || 'Failed to create job';
-//       });
-
-//     /* ---------------- Update Job ---------------- */
-//     builder
-//       .addCase(updateJob.fulfilled, (state, action) => {
-//         const updatedJob = action.payload?.data;
-//         if (updatedJob) {
-//           const jobIndex = state.jobs.findIndex((job) => job.id === updatedJob.id);
-//           if (jobIndex !== -1) {
-//             state.jobs[jobIndex] = updatedJob;
-//           }
-//           if (state.currentJob?.id === updatedJob.id) {
-//             state.currentJob = updatedJob;
-//           }
-//         }
-//       })
-//       .addCase(updateJob.rejected, (state, action) => {
-//         state.error = (action.payload as string) || 'Failed to update job';
-//       });
-
-//     /* ---------------- Delete Job ---------------- */
-//     builder
-//       .addCase(deleteJob.fulfilled, (state, action) => {
-//         const jobId = action.payload;
-//         state.jobs = state.jobs.filter((job) => job.id !== jobId);
-//         if (state.currentJob?.id === jobId) {
-//           state.currentJob = null;
-//         }
-//       })
-//       .addCase(deleteJob.rejected, (state, action) => {
-//         state.error = (action.payload as string) || 'Failed to delete job';
-//       });
-
-//     /* ---------------- Reorder Jobs ---------------- */
-//     // builder
-//     //   .addCase(reorderJobs.fulfilled, (state, action) => {
-//     //     const jobIds = action.payload;
-//     //     const jobsMap = new Map(state.jobs.map((job) => [job.id, job]));
-//     //     state.jobs = jobIds.map((id, index) => ({
-//     //       ...jobsMap.get(id)!,
-//     //       order: index
-//     //     }));
-//     //   })
-//     //   .addCase(reorderJobs.rejected, (state, action) => {
-//     //     state.error = (action.payload as string) || 'Failed to reorder jobs';
-//     //   });
-
-
-//     builder
-//     .addCase(reorderJobs.fulfilled, (state, action) => {
-//       const newOrderIds: string[] = action.payload;
-//       const jobsMap = new Map(state.jobs.map((job) => [job.id, job]));
-//       state.jobs = newOrderIds.map((id, index) => ({
-//         ...jobsMap.get(id)!,
-//         order: index
-//       }));
-//     })
-//     .addCase(reorderJobs.rejected, (state, action) => {
-//       // Handle the error - could revert to original order or show error
-//       console.error('Reorder failed:', action.payload);
-//     });
-
-// }
-// });
-
-// export const { setFilters, setPagination, clearError } = jobsSlice.actions;
-
-// /* ---------------- Selectors ---------------- */
-// export const selectJobs = (state: { jobs: JobsState }) => state.jobs.jobs;
-// export const selectCurrentJob = (state: { jobs: JobsState }) => state.jobs.currentJob;
-// export const selectJobsLoading = (state: { jobs: JobsState }) => state.jobs.loading;
-// export const selectJobsError = (state: { jobs: JobsState }) => state.jobs.error;
-// export const selectJobsFilters = (state: { jobs: JobsState }) => state.jobs.filters;
-// export const selectJobsPagination = (state: { jobs: JobsState }) => state.jobs.pagination;
-
-// export const selectPaginatedJobs = createSelector(
-//   [selectJobs, selectJobsPagination],
-//   (jobs, pagination) => ({
-//     jobs: jobs || [],
-//     totalJobs: pagination.totalJobs,
-//     totalPages: pagination.totalPages
-//   })
-// );
-
-// export const selectJobById = (state: { jobs: JobsState }, jobId: string): Job | undefined =>
-//   state.jobs.jobs?.find((job) => job.id === jobId) ||
-//   (state.jobs.currentJob?.id === jobId ? state.jobs.currentJob : undefined);
-
-// /* Alias for backwards compatibility */
-// export const addJob = createJob;
-
-// export default jobsSlice.reducer;
-
-
 import { createSlice, PayloadAction, createSelector } from '@reduxjs/toolkit';
 import type { Job } from '@/lib/database';
 import {
@@ -292,7 +73,7 @@ const jobsSlice = createSlice({
       .addCase(fetchJobs.fulfilled, (state, action) => {
         state.loading = false;
 
-        console.log("🔍 Redux - Received payload:", action.payload);
+        console.log("Redux - Received payload:", action.payload);
 
         // Robust handling of payload (MSW vs plain)
         const payload: any = action.payload;
@@ -303,7 +84,7 @@ const jobsSlice = createSlice({
             totalJobs: payload.data.pagination?.total_items || 0,
             totalPages: payload.data.pagination?.total_pages || 0
           };
-          console.log('✅ Successfully processed jobs:', state.jobs.length);
+          console.log('Successfully processed jobs:', state.jobs.length);
         } else if (Array.isArray(payload)) {
           state.jobs = payload;
           state.pagination = {
@@ -312,7 +93,7 @@ const jobsSlice = createSlice({
             totalPages: Math.ceil(payload.length / state.pagination.itemsPerPage)
           };
         } else {
-          console.error('❌ Unexpected jobs payload structure:', action.payload);
+          console.error('Unexpected jobs payload structure:', action.payload);
           state.jobs = [];
           state.pagination = {
             ...state.pagination,

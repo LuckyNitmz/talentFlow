@@ -80,7 +80,7 @@ export interface Assessment {
   description?: string;
   sections: AssessmentSection[];
   is_active: boolean;
-  // ✅ REMOVED: assessment_number: number;
+  // REMOVED: assessment_number: number;
   created_at: string;
   created_by: string;
   updated_at: string;
@@ -133,7 +133,7 @@ export interface ConditionalLogic {
   }[];
 }
 
-// ✅ Enhanced Database class
+//Enhanced Database class
 export class TalentFlowDB extends Dexie {
   jobs!: Table<Job>;
   candidates!: Table<Candidate>;
@@ -151,11 +151,11 @@ export class TalentFlowDB extends Dexie {
 
 export const db = new TalentFlowDB();
 
-// ✅ Enhanced Database utility functions
+//Enhanced Database utility functions
 export const dbUtils = {
   async initializeData() {
     try {
-      console.log('🔄 Initializing database...');
+      console.log('Initializing database...');
       
       const jobCount = await db.jobs.count();
       const candidateCount = await db.candidates.count();
@@ -170,13 +170,13 @@ export const dbUtils = {
 
       const assessmentCount = await db.assessments.count();
       if (assessmentCount === 0) {
-        await this.seedAssessments(); // ✅ Add this
+        await this.seedAssessments(); //Add this
       }
       
-      console.log('✅ Database initialized successfully');
+      console.log('Database initialized successfully');
       await this.logStats();
     } catch (error) {
-      console.error('❌ Failed to initialize database:', error);
+      console.error('Failed to initialize database:', error);
     }
   },
 
@@ -221,10 +221,10 @@ async updateCandidateStageWithTimeline(
     await db.candidates.update(candidateId, updatedData);
     const updatedCandidate = await db.candidates.get(candidateId);
     
-    console.log('✅ Candidate stage updated with timeline:', candidateId);
+    console.log('Candidate stage updated with timeline:', candidateId);
     return updatedCandidate || null;
   } catch (error) {
-    console.error('❌ Error updating candidate stage with timeline:', error);
+    console.error('Error updating candidate stage with timeline:', error);
     throw error;
   }
 },
@@ -242,15 +242,15 @@ async updateCandidateStageWithTimeline(
     }));
     
     await db.assessments.bulkAdd(enhancedAssessments);
-    console.log(`📋 Seeded ${enhancedAssessments.length} assessments`);
+    console.log(`Seeded ${enhancedAssessments.length} assessments`);
   } catch (error) {
-    console.error('❌ Failed to seed assessments:', error);
+    console.error('Failed to seed assessments:', error);
   }
 },
 
   async seedJobs() {
     try {
-      // ✅ Import jobs data from JSON
+      // Import jobs data from JSON
       const jobsModule = await import('@/data/jobs.json');
       const jobs = jobsModule.default;
       
@@ -266,15 +266,15 @@ async updateCandidateStageWithTimeline(
       }));
       
       await db.jobs.bulkAdd(enhancedJobs);
-      console.log(`📊 Seeded ${enhancedJobs.length} jobs`);
+      console.log(`Seeded ${enhancedJobs.length} jobs`);
     } catch (error) {
-      console.error('❌ Failed to seed jobs:', error);
+      console.error('Failed to seed jobs:', error);
     }
   },
 
   async seedCandidates() {
     try {
-      // ✅ Import candidates data from JSON
+      //Import candidates data from JSON
       const candidatesModule = await import('@/data/candidates.json');  
       const candidates = candidatesModule.default;
       
@@ -297,13 +297,13 @@ async updateCandidateStageWithTimeline(
       }));
       
       await db.candidates.bulkAdd(enhancedCandidates);
-      console.log(`👥 Seeded ${enhancedCandidates.length} candidates`);
+      console.log(`Seeded ${enhancedCandidates.length} candidates`);
     } catch (error) {
-      console.error('❌ Failed to seed candidates:', error);
+      console.error('Failed to seed candidates:', error);
     }
   },
 
-  // ✅ CRUD Operations for Jobs
+  // CRUD Operations for Jobs
   async createJob(jobData: Partial<Job>): Promise<Job> {
     const newJob: Job = {
       id: `job-${Date.now()}`,
@@ -327,7 +327,7 @@ async updateCandidateStageWithTimeline(
     };
 
     await db.jobs.add(newJob);
-    console.log('✅ Job created:', newJob.id);
+    console.log('Job created:', newJob.id);
     return newJob;
   },
 
@@ -339,13 +339,13 @@ async updateCandidateStageWithTimeline(
 
     await db.jobs.update(id, updatedData);
     const updatedJob = await db.jobs.get(id);
-    console.log('✅ Job updated:', id);
+    console.log('Job updated:', id);
     return updatedJob || null;
   },
 
   async deleteJob(id: string): Promise<boolean> {
     await db.jobs.delete(id);
-    console.log('✅ Job deleted:', id);
+    console.log('Job deleted:', id);
     return true;
   },
 
@@ -379,7 +379,7 @@ async updateCandidateStageWithTimeline(
     return await query.sortBy('order');
   },
 
-  // ✅ CRUD Operations for Candidates
+  // CRUD Operations for Candidates
   async createCandidate(candidateData: Partial<Candidate>): Promise<Candidate> {
     const newCandidate: Candidate = {
       id: `candidate-${Date.now()}`,
@@ -405,7 +405,7 @@ async updateCandidateStageWithTimeline(
     };
 
     await db.candidates.add(newCandidate);
-    console.log('✅ Candidate created:', newCandidate.id);
+    console.log('Candidate created:', newCandidate.id);
     return newCandidate;
   },
 
@@ -417,13 +417,13 @@ async updateCandidateStageWithTimeline(
 
     await db.candidates.update(id, updatedData);
     const updatedCandidate = await db.candidates.get(id);
-    console.log('✅ Candidate updated:', id);
+    console.log('Candidate updated:', id);
     return updatedCandidate || null;
   },
 
   async deleteCandidate(id: string): Promise<boolean> {
     await db.candidates.delete(id);
-    console.log('✅ Candidate deleted:', id);
+    console.log('Candidate deleted:', id);
     return true;
   },
 
@@ -477,112 +477,14 @@ async updateCandidateStageWithTimeline(
     candidate.notes.push(newNote);
     await db.candidates.update(candidateId, { notes: candidate.notes });
 
-    console.log('✅ Note added to candidate:', candidateId);
+    console.log('Note added to candidate:', candidateId);
     return newNote;
   },
 
-  // ✅ CRUD Operations for Assessments
-  // async createAssessment(assessmentData: Partial<Assessment>): Promise<Assessment> {
-  //   const newAssessment: Assessment = {
-  //     id: `assessment-${Date.now()}`,
-  //     job_id: assessmentData.job_id || '',
-  //     title: assessmentData.title || 'New Assessment',
-  //     description: assessmentData.description || '',
-  //     sections: assessmentData.sections || [],
-  //     is_active: assessmentData.is_active || true,
-  //     created_at: new Date().toISOString(),
-  //     updated_at: new Date().toISOString(),
-  //     created_by: 'current-user@company.com',
-  //     ...assessmentData
-  //   };
-
-  //   await db.assessments.add(newAssessment);
-  //   console.log('✅ Assessment created:', newAssessment.id);
-  //   return newAssessment;
-  // },
-
-  // async updateAssessment(id: string, updates: Partial<Assessment>): Promise<Assessment | null> {
-  //   const updatedData = {
-  //     ...updates,
-  //     updated_at: new Date().toISOString()
-  //   };
-
-  //   await db.assessments.update(id, updatedData);
-  //   const updatedAssessment = await db.assessments.get(id);
-  //   console.log('✅ Assessment updated:', id);
-  //   return updatedAssessment || null;
-  // },
-
-  // async deleteAssessment(id: string): Promise<boolean> {
-  //   await db.assessments.delete(id);
-  //   console.log('✅ Assessment deleted:', id);
-  //   return true;
-  // },
-
-  // async getAssessment(id: string): Promise<Assessment | null> {
-  //   const assessment = await db.assessments.get(id);
-  //   return assessment || null;
-  // },
-
-  // async getAssessmentByJobId(jobId: string): Promise<Assessment | null> {
-  //   const assessment = await db.assessments.where('job_id').equals(jobId).first();
-  //   return assessment || null;
-  // },
-
-  // async getAllAssessments(): Promise<Assessment[]> {
-  //   return await db.assessments.orderBy('created_at').toArray();
-  // },
-
-  // Updated dbUtils for multiple assessments per job
-// async createAssessment(assessmentData: Partial<Assessment>): Promise<Assessment> {
-//   // ✅ CHANGED: Check if job already has an assessment (single only)
-//   const existingAssessment = await this.getAssessmentByJobId(assessmentData.job_id || '');
-//   if (existingAssessment) {
-//     throw new Error('An assessment already exists for this job. Only one assessment allowed per job.');
-//   }
-
-//   // ✅ CHANGED: Remove assessment number logic, create single assessment
-//   const newAssessment: Assessment = {
-//     id: `assessment-${assessmentData.job_id}-${Date.now()}`,
-//     job_id: assessmentData.job_id || '',
-//     // ✅ REMOVED: assessment_number field
-//     title: assessmentData.title || `Assessment for Job`,
-//     description: assessmentData.description || '',
-//     sections: assessmentData.sections || [],
-//     is_active: assessmentData.is_active ?? true,
-//     created_at: new Date().toISOString(),
-//     updated_at: new Date().toISOString(),
-//     created_by: assessmentData.created_by || 'current-user@company.com',
-//     ...assessmentData
-//   };
-
-//   await db.assessments.add(newAssessment);
-//   console.log('✅ Assessment created:', newAssessment.id);
-//   return newAssessment;
-// },
-
-// async updateAssessment(id: string, updates: Partial<Assessment>): Promise<Assessment | null> {
-//   const updatedData = {
-//     ...updates,
-//     updated_at: new Date().toISOString()
-//   };
-
-//   await db.assessments.update(id, updatedData);
-//   const updatedAssessment = await db.assessments.get(id);
-//   console.log('✅ Assessment updated:', id);
-//   return updatedAssessment || null;
-// },
-
-// ✅ FIXED: Create assessment with proper job_id validation
-// Add this import at the top of your database.ts file
-
-
-// Fixed createAssessment method
-
-// ✅ FIXED: Use put() instead of add() for upsert behavior
+// FIXED: Use put() instead of add() for upsert behavior
 async createAssessment(assessmentData: Omit<Assessment, 'created_at' | 'updated_at'>): Promise<Assessment> {
   try {
-    // ✅ CRITICAL: Validate job_id is present
+    // CRITICAL: Validate job_id is present
     if (!assessmentData.job_id) {
       throw new Error('job_id is required when creating assessment');
     }
@@ -595,23 +497,23 @@ async createAssessment(assessmentData: Omit<Assessment, 'created_at' | 'updated_
       updated_at: now,
     };
     
-    console.log('💾 Saving assessment to IndexedDB via Dexie:', assessment);
+    console.log('Saving assessment to IndexedDB via Dexie:', assessment);
     
-    // ✅ FIXED: Use put() instead of add() - this handles both create and update
+    // FIXED: Use put() instead of add() - this handles both create and update
     await db.assessments.put(assessment);
     
-    console.log('✅ Assessment saved with job_id:', assessment.job_id);
+    console.log('Assessment saved with job_id:', assessment.job_id);
     return assessment;
   } catch (error) {
-    console.error('❌ Error creating assessment:', error);
+    console.error('Error creating assessment:', error);
     throw error;
   }
 },
 
-// ✅ FIXED: Simplified update method
+// FIXED: Simplified update method
 async updateAssessment(id: string, updates: Partial<Assessment>): Promise<Assessment | null> {
   try {
-    // ✅ Get existing record first
+    //Get existing record first
     const existing = await db.assessments.get(id);
     if (!existing) {
       console.log('Assessment not found for update:', id);
@@ -621,29 +523,29 @@ async updateAssessment(id: string, updates: Partial<Assessment>): Promise<Assess
     const updated: Assessment = {
       ...existing,
       ...updates,
-      job_id: existing.job_id, // ✅ Preserve original job_id
-      created_at: existing.created_at, // ✅ Preserve original created_at
+      job_id: existing.job_id, //Preserve original job_id
+      created_at: existing.created_at, //Preserve original created_at
       updated_at: new Date().toISOString(),
     };
     
     console.log('💾 Updating assessment with job_id:', updated.job_id);
     
-    // ✅ Use put() for upsert
+    // Use put() for upsert
     await db.assessments.put(updated);
     
-    console.log('✅ Assessment updated with job_id preserved:', updated.job_id);
+    console.log('Assessment updated with job_id preserved:', updated.job_id);
     return updated;
   } catch (error) {
-    console.error('❌ Error updating assessment:', error);
+    console.error('Error updating assessment:', error);
     throw error;
   }
 },
 
 
-// ✅ Keep existing methods as they already use Dexie
+//Keep existing methods as they already use Dexie
 async deleteAssessment(id: string): Promise<boolean> {
   await db.assessments.delete(id);
-  console.log('✅ Assessment deleted:', id);
+  console.log('Assessment deleted:', id);
   return true;
 },
 
@@ -652,7 +554,7 @@ async getAssessment(id: string): Promise<Assessment | null> {
   return assessment || null;
 },
 
-// ✅ CHANGED: Get single assessment by job ID (main method)
+// CHANGED: Get single assessment by job ID (main method)
 async getAssessmentByJobId(jobId: string): Promise<Assessment | null> {
   const assessments = await db.assessments
     .where('job_id')
@@ -666,17 +568,17 @@ async getAllAssessments(): Promise<Assessment[]> {
 },
 
 
-// ✅ REMOVED: getAssessmentsByJobId - no longer needed since single assessment only
+//REMOVED: getAssessmentsByJobId - no longer needed since single assessment only
 // Old method that returned multiple assessments is no longer needed
 
-// ✅ DEPRECATED: Keep for backward compatibility but mark as deprecated
+// DEPRECATED: Keep for backward compatibility but mark as deprecated
 async getAssessmentByJobIdAndNumber(jobId: string, assessmentNumber: number): Promise<Assessment | null> {
-  console.warn('⚠️ getAssessmentByJobIdAndNumber is deprecated. Use getAssessmentByJobId instead.');
+  console.warn('getAssessmentByJobIdAndNumber is deprecated. Use getAssessmentByJobId instead.');
   // Since we only have one assessment per job now, ignore the number
   return this.getAssessmentByJobId(jobId);
 },
 
-// ✅ NEW: Get assessments with job details (useful for admin views)
+//NEW: Get assessments with job details (useful for admin views)
 async getAssessmentsWithJobDetails(): Promise<(Assessment & { job?: any })[]> {
   const assessments = await this.getAllAssessments();
   const assessmentsWithJobs = await Promise.all(
@@ -688,13 +590,13 @@ async getAssessmentsWithJobDetails(): Promise<(Assessment & { job?: any })[]> {
   return assessmentsWithJobs;
 },
 
-// ✅ NEW: Check if job has assessment
+// NEW: Check if job has assessment
 async jobHasAssessment(jobId: string): Promise<boolean> {
   const assessment = await this.getAssessmentByJobId(jobId);
   return assessment !== null;
 },
 
-// ✅ NEW: Get jobs without assessments
+// NEW: Get jobs without assessments
 async getJobsWithoutAssessments(): Promise<Job[]> {
   const allJobs = await this.getAllJobs();
   const jobsWithoutAssessments = [];
@@ -716,7 +618,7 @@ async clearAllData() {
     db.candidates.clear();
     db.assessments.clear();
   });
-  console.log('🗑️ All data cleared');
+  console.log('All data cleared');
 },
 
 async getStats() {
@@ -726,7 +628,7 @@ async getStats() {
     db.assessments.count()
   ]);
 
-  // ✅ NEW: Calculate jobs with/without assessments
+  // NEW: Calculate jobs with/without assessments
   const jobsWithAssessments = await this.getAllAssessments();
   const jobsWithoutAssessments = await this.getJobsWithoutAssessments();
 
@@ -742,7 +644,7 @@ async getStats() {
 
 async logStats() {
   const stats = await this.getStats();
-  console.log('📊 Database Stats:', stats);
+  console.log('Database Stats:', stats);
 },
 }
 

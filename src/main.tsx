@@ -6,14 +6,14 @@ import App from './App';
 import { dbUtils } from './lib/database';
 import '@/index.css'
 
-// ✅ Import MSW worker
+// Import MSW worker
 import { worker } from './mocks/browser';
 
 async function startApp() {
   try {
-    // ✅ 1. Start MSW first
+    // 1. Start MSW first
     
-      console.log('🔄 Starting MSW...');
+      console.log('Starting MSW...');
       await worker.start({
         onUnhandledRequest: 'warn', // Log unhandled requests
         serviceWorker: {

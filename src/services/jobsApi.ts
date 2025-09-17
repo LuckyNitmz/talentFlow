@@ -21,7 +21,7 @@ export const jobsApi = {
     });
 
     const response = await api.get(`/jobs?${searchParams.toString()}`);
-    console.log("✅ Jobs API Response:", response);
+    console.log("Jobs API Response:", response);
     return response;
   },
 
@@ -45,7 +45,7 @@ export const jobsApi = {
     return response;
   },
 
-  // ✅ ADD: Reorder jobs function
+  // ADD: Reorder jobs function
   async reorderJobs(jobIds: string[]) {
     const response = await api.patch('/jobs/reorder', { jobIds });
     return response;

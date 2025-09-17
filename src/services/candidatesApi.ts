@@ -20,24 +20,24 @@ export const candidatesApi = {
     });
 
     const response = await api.get(`/candidates?${searchParams.toString()}`);
-    // ✅ FIXED: Don't access .data since axios interceptor already extracted it
-    console.log("✅ Candidates API Response:", response);
+    // FIXED: Don't access .data since axios interceptor already extracted it
+    console.log("Candidates API Response:", response);
     return response; // This is already the MSW data from interceptor
   },
 
   async getCandidateById(id: string) {
     const response = await api.get(`/candidates/${id}`);
-    // ✅ FIXED: Don't access .data
+    // FIXED: Don't access .data
     return response;
   },
 
   async updateCandidate(id: string, updates: Partial<Candidate>) {
     const response = await api.patch(`/candidates/${id}`, updates);
-    // ✅ FIXED: Don't access .data
+    // FIXED: Don't access .data
     return response;
   },
 
-  // ✅ NEW: Update candidate stage with timeline
+  // NEW: Update candidate stage with timeline
   async updateCandidateStageWithTimeline(
     candidateId: string,
     candidateName: string,
@@ -61,7 +61,7 @@ export const candidatesApi = {
       content,
       is_private: isPrivate
     });
-    // ✅ FIXED: Don't access .data
+    // FIXED: Don't access .data
     return response;
   },
 
@@ -71,7 +71,7 @@ export const candidatesApi = {
       pageSize: 1000 
     });
     
-    // ✅ FIXED: Handle the MSW response structure properly
+    // FIXED: Handle the MSW response structure properly
     let candidates = [];
     if (response?.success && response?.data?.candidates) {
       candidates = response.data.candidates;
@@ -80,7 +80,7 @@ export const candidatesApi = {
     } else if (Array.isArray(response)) {
       candidates = response;
     } else {
-      console.error('❌ Unexpected candidates response structure:', response);
+      console.error('Unexpected candidates response structure:', response);
       candidates = [];
     }
     
@@ -91,7 +91,7 @@ export const candidatesApi = {
       candidatesByStage[stage] = candidates.filter((candidate: Candidate) => candidate.stage === stage);
     });
     
-    return candidatesByStage; // ✅ FIXED: Return directly, not wrapped in { data: ... }
+    return candidatesByStage; // FIXED: Return directly, not wrapped in { data: ... }
   }
 };
 
