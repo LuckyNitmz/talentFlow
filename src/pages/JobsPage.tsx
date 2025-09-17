@@ -243,18 +243,18 @@ const JobsPage = () => {
               <DialogHeader>
                 <DialogTitle className="text-base md:text-lg">Create New Job</DialogTitle>
                 <DialogDescription className="text-sm">
-                  Add a new job posting to your recruitment pipeline.
+                  Post a new role to your hiring board.
                 </DialogDescription>
               </DialogHeader>
               
               <div className="grid gap-4 py-4">
                 <div className="grid gap-2">
-                  <Label htmlFor="title" className="text-sm">Job Title</Label>
+                  <Label htmlFor="title" className="text-sm">Job Title *</Label>
                   <Input
                     id="title"
                     value={formData.title}
                     onChange={(e) => setFormData({ ...formData, title: e.target.value })}
-                    placeholder="e.g. Senior Frontend Developer"
+                    placeholder="e.g. Backend Developer"
                     className="text-sm"
                   />
                 </div>
@@ -278,7 +278,7 @@ const JobsPage = () => {
                       id="location"
                       value={formData.location}
                       onChange={(e) => setFormData({ ...formData, location: e.target.value })}
-                      placeholder="e.g. San Francisco, CA"
+                      placeholder="e.g. New Yow, USA"
                       className="text-sm"
                     />
                   </div>
@@ -290,10 +290,10 @@ const JobsPage = () => {
                         <SelectValue />
                       </SelectTrigger>
                       <SelectContent>
-                        <SelectItem value="Full-time">Full-time</SelectItem>
-                        <SelectItem value="Part-time">Part-time</SelectItem>
                         <SelectItem value="Contract">Contract</SelectItem>
                         <SelectItem value="Internship">Internship</SelectItem>
+                        <SelectItem value="Part-time">Part-time</SelectItem>
+                        <SelectItem value="Full-time">Full-time</SelectItem>
                       </SelectContent>
                     </Select>
                   </div>
@@ -332,7 +332,7 @@ const JobsPage = () => {
                     id="tags"
                     value={formData.tags}
                     onChange={(e) => setFormData({ ...formData, tags: e.target.value })}
-                    placeholder="e.g. React, TypeScript, Remote (comma separated)"
+                    placeholder="e.g. React, MSW, TypeScript (Work from Home)"
                     className="text-sm"
                   />
                 </div>
