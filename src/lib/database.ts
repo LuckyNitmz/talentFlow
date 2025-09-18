@@ -364,7 +364,9 @@ async updateCandidateStageWithTimeline(
     if (filters.search) {
       query = query.filter(job => 
         job.title.toLowerCase().includes(filters.search!.toLowerCase()) ||
-        job.description.toLowerCase().includes(filters.search!.toLowerCase())
+        job.description.toLowerCase().includes(filters.search!.toLowerCase()) ||
+         (job.tags && Array.isArray(job.tags) &&
+        job.tags.some(tag => tag.toLowerCase().includes(filters.search!.toLowerCase())))
       );
     }
 
